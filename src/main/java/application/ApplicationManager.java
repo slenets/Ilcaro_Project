@@ -28,7 +28,7 @@ public class ApplicationManager {
         return userHelper;
     }
 
-    public HelperCar getCarHelper() {
+    public HelperCar carHelper() {
         return carHelper;
     }
 }

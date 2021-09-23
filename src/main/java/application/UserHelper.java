@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UserHelper extends HelperBase {
     public UserHelper(WebDriver wd) {
@@ -24,6 +26,7 @@ public class UserHelper extends HelperBase {
     public void fillLoginForm(User user) {
         typeTextBox(By.xpath("//input[@formcontrolname='email']"), user.getEmail());
         typeTextBox(By.xpath("//input[@formcontrolname='password']"), user.getPassword());
+        pause(1000);
     }
 
 
