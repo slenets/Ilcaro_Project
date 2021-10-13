@@ -32,12 +32,17 @@ public class RegistrationTest extends TestBase {
     @Test
     public void registrationPositiveTestModel() {
 
+
+
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         User user = new User()
                 .withName("Lis")
                 .withLastName("Snow")
                 .withEmail("snow" +i+ "@gmail.com")
                 .withPassword("Lis"+i+"ndy123");
+
+        logger.info("TestData: name:" + user.getName() + " LastName: " + user.getLastName() + "Email: " + user.getEmail()
+        + " Password: " + user.getPassword());
 
         app.userHelper().openRegistrationForm();
         app.userHelper().fillRegistrationForm(user);

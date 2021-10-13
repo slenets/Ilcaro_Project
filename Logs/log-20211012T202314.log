@@ -1,0 +1,3 @@
+20:23:38 INFO  tests.TestBase - Start method: registrationPositiveTestModel
+20:23:43 INFO  tests.TestBase - TestData: name:LisLastNameSnowEmail: snow1423@gmail.comPassword: Lis1423ndy123
+20:23:44 INFO  tests.TestBase - End of test --> registrationPositiveTestModel
