@@ -1,3 +1,0 @@
-20:17:49 INFO  tests.TestBase - Start method: loginSuccess
-20:17:54 INFO  tests.TestBase - Login with email: slavka.lenetz@gmail.com &  password Ilcarro123
-20:17:55 INFO  tests.TestBase - End of test --> loginSuccess

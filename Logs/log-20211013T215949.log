@@ -1,0 +1,3 @@
+22:00:16 INFO  tests.TestBase - Start method: searchDateBySelectAnyMonth
+22:00:18 INFO  tests.TestBase - Chosen date in future: from current day and until one year forward only
+22:00:18 INFO  tests.TestBase - End of test --> searchDateBySelectAnyMonth
