@@ -1,27 +1,39 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class SearchTest extends TestBase{
 
     //10/20/2021 - 10/22/2021
     //09/20/2021 - 09/22/2021
+    @BeforeMethod
+    public void precondition(){
+        if(!app.getSearchHelper().isSearchFormPresent()){
+            app.getSearchHelper().clickSearchHeader();
+        }
+    }
+
     @Test
     public void searchTestByType(){
-
+        app.getSearchHelper().typeDate("Haifa", "2/2/2022", "5/2/2022");
+        app.getSearchHelper().submitYalla();
+        Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
     }
-
-    @Test
-    public void searchTestByTypeNegative(){
-
-    }
+//
+//    @Test
+//    public void searchTestByTypeNegative(){
+//        app.getSearchHelper().typeDate("Haifa", "2/2/2022", "5/2/2021");
+//        Assert.assertTrue(app.getSearchHelper().isErrorPresent());
+//        Assert.assertFalse(app.getSearchHelper().isYallaButtonActive());
+//    }
 
     @Test
     public void searchDateBySelectCurrentMonth(){
         //date-picker
-        app.getSearchHelper().fillSearchForm("Haifa", "10/25/2021", "10/30/2021");
-        app.userHelper().submitLoginForm();
+        app.getSearchHelper().fillSearchFormCurrent("Haifa", "10/25/2021", "10/30/2021");
+        app.userHelper().submitYalla();
         app.userHelper().pause(500);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
 
@@ -31,8 +43,8 @@ public class SearchTest extends TestBase{
     @Test
     public void searchDateBySelectAnyMonth(){
         //date-picker
-        app.getSearchHelper().fillSearchFormFuture("Haifa", "10/22/2021", "10/29/2021");
-        app.userHelper().submitLoginForm();
+        app.getSearchHelper().fillSearchFormFuture("Haifa", "10/22/2021", "12/29/2021");
+        app.userHelper().submitYalla();
         app.userHelper().pause(500);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
 

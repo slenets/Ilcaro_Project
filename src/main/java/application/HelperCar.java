@@ -3,6 +3,7 @@ package application;
 import models.Car;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,7 +38,6 @@ public class HelperCar extends HelperBase{
         typeTextBox(By.id("distance"), car.getDistanceIncluded());
         typeTextBox(By.className("feature-input"), car.getTypeFeature());
         typeTextBox(By.id("about"), car.getAbout());
-
     }
 
     private void select(By locator, String option) {
@@ -61,12 +61,17 @@ public class HelperCar extends HelperBase{
     }
 
     public void submitForm() {
-        new WebDriverWait(wd, 10)
+        WebElement el = new WebDriverWait(wd, 10)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.='Submit']")));
-        click(By.xpath("//button[.='Submit']"));
+        el.click();
+        //click(By.xpath("//button[.='Submit']"));
     }
 
     public boolean isCarAdded() {
        return wd.findElement(By.xpath("//h1[text()='Car added']")).isDisplayed();
+    }
+
+    public void showAddedCar() {
+        click(By.xpath("//button[text()='Show car']"));
     }
 }

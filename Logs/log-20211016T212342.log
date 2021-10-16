@@ -1,0 +1,75 @@
+21:24:13 INFO  tests.TestBase - Start method: searchDateBySelectAnyMonth
+21:24:13 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:24:13 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:24:13 INFO  application.MyListener - Start find element by -----> By.id: city
+21:24:13 INFO  application.MyListener - The element ---> By.id: city was found
+21:24:13 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:24:14 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:24:14 INFO  application.MyListener - Start find element by -----> By.id: dates
+21:24:14 INFO  application.MyListener - The element ---> By.id: dates was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 22 ']
+21:24:15 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 22 '] was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@aria-label='Next month']
+21:24:15 INFO  application.MyListener - The element ---> By.xpath: //button[@aria-label='Next month'] was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@aria-label='Next month']
+21:24:15 INFO  application.MyListener - The element ---> By.xpath: //button[@aria-label='Next month'] was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 29 ']
+21:24:15 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 29 '] was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:24:15 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:24:15 INFO  application.MyListener - Start find element by -----> By.cssSelector: .search-results
+21:24:15 INFO  application.MyListener - The element ---> By.cssSelector: .search-results was found
+21:24:15 INFO  tests.TestBase - Chosen date in future: from current day and until one year forward only
+21:24:15 INFO  tests.TestBase - End of test --> searchDateBySelectAnyMonth
+21:24:15 INFO  tests.TestBase - Start method: searchDateBySelectCurrentMonth
+21:24:15 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:24:16 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:24:16 INFO  application.MyListener - Start find element by -----> By.id: city
+21:24:16 INFO  application.MyListener - The element ---> By.id: city was found
+21:24:16 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:24:16 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:24:17 INFO  application.MyListener - Start find element by -----> By.id: dates
+21:24:22 INFO  application.MyListener - The element ---> By.id: dates was found
+21:24:22 INFO  application.MyListener - Start find element by -----> By.cssSelector: [formcontrolname='dates']
+21:24:22 INFO  application.MyListener - The element ---> By.cssSelector: [formcontrolname='dates'] was found
+21:24:22 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 25 ']
+21:24:22 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 25 '] was found
+21:24:22 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 30 ']
+21:24:22 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 30 '] was found
+21:24:22 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:24:22 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:24:22 INFO  application.MyListener - Start find element by -----> By.cssSelector: .search-results
+21:24:23 INFO  application.MyListener - The element ---> By.cssSelector: .search-results was found
+21:24:23 INFO  tests.TestBase - Chosen date in current month of the year
+21:24:23 INFO  tests.TestBase - End of test --> searchDateBySelectCurrentMonth
+21:24:23 INFO  tests.TestBase - Start method: searchTestByType
+21:24:23 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:24:23 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:24:23 INFO  application.MyListener - Start find element by -----> By.id: city
+21:24:23 INFO  application.MyListener - The element ---> By.id: city was found
+21:24:23 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:24:23 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:24:24 INFO  application.MyListener - We have a trouble ---> element click intercepted: Element <div class="pac-item">...</div> is not clickable at point (328, 318). Other element would receive the click: <div class="pac-item">...</div>
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58df876ef3da19b3087b42ebc192090e
+21:24:24 INFO  tests.TestBase - End of test --> searchTestByType
+21:24:24 INFO  tests.TestBase - Start method: searchTestByTypeNegative
+21:24:24 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:24:24 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:24:24 INFO  application.MyListener - Start find element by -----> By.id: city
+21:24:24 INFO  application.MyListener - The element ---> By.id: city was found
+21:24:24 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:24:24 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:24:24 INFO  application.MyListener - We have a trouble ---> stale element reference: element is not attached to the page document
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57558}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 58df876ef3da19b3087b42ebc192090e
+21:24:24 INFO  tests.TestBase - End of test --> searchTestByTypeNegative

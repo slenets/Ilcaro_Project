@@ -1,0 +1,277 @@
+21:03:02 INFO  tests.TestBase - Start method: registrationNegativeTest
+21:03:02 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:07 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Sign up ']
+21:03:07 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Sign up '] was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.id: name
+21:03:07 INFO  application.MyListener - The element ---> By.id: name was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.id: lastName
+21:03:07 INFO  application.MyListener - The element ---> By.id: lastName was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.id: email
+21:03:07 INFO  application.MyListener - The element ---> By.id: email was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.id: password
+21:03:07 INFO  application.MyListener - The element ---> By.id: password was found
+21:03:07 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:08 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:08 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()='Wrong email format']
+21:03:08 INFO  application.MyListener - The element ---> By.xpath: //div[text()='Wrong email format'] was found
+21:03:08 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:08 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:08 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:13 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:13 INFO  tests.TestBase - End of test --> registrationNegativeTest
+21:03:13 INFO  tests.TestBase - Start method: registrationPositiveTest
+21:03:13 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:18 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Sign up ']
+21:03:18 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Sign up '] was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.id: name
+21:03:18 INFO  application.MyListener - The element ---> By.id: name was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.id: lastName
+21:03:18 INFO  application.MyListener - The element ---> By.id: lastName was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.id: email
+21:03:18 INFO  application.MyListener - The element ---> By.id: email was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.id: password
+21:03:18 INFO  application.MyListener - The element ---> By.id: password was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:18 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:18 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+21:03:19 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:19 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:19 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:19 INFO  tests.TestBase - End of test --> registrationPositiveTest
+21:03:19 INFO  tests.TestBase - Start method: registrationPositiveTestModel
+21:03:19 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:19 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:19 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:19 INFO  tests.TestBase - TestData: name:Lis LastName: SnowEmail: snow199@gmail.com Password: Lis199ndy123
+21:03:19 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Sign up ']
+21:03:19 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Sign up '] was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.id: name
+21:03:19 INFO  application.MyListener - The element ---> By.id: name was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.id: lastName
+21:03:19 INFO  application.MyListener - The element ---> By.id: lastName was found
+21:03:19 INFO  application.MyListener - Start find element by -----> By.id: email
+21:03:19 INFO  application.MyListener - The element ---> By.id: email was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.id: password
+21:03:20 INFO  application.MyListener - The element ---> By.id: password was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+21:03:20 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:20 INFO  tests.TestBase - End of test --> registrationPositiveTestModel
+21:03:20 INFO  tests.TestBase - Start method: loginSuccess
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:20 INFO  tests.TestBase - Login with email: slavka.lenetz@gmail.com &  password Ilcarro123
+21:03:20 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+21:03:20 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+21:03:21 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+21:03:21 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+21:03:21 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+21:03:21 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+21:03:21 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:21 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:21 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+21:03:22 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:22 INFO  tests.TestBase - End of test --> loginSuccess
+21:03:22 INFO  tests.TestBase - Start method: loginSuccessModel
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+21:03:22 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+21:03:22 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+21:03:24 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:24 INFO  tests.TestBase - End of test --> loginSuccessModel
+21:03:24 INFO  tests.TestBase - Start method: negativeLoginWrongPassword
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+21:03:24 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+21:03:24 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+21:03:25 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+21:03:25 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:26 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+21:03:26 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:26 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+21:03:26 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+21:03:26 INFO  tests.TestBase - End of test --> negativeLoginWrongPassword
+21:03:26 INFO  tests.TestBase - Start method: addNewCarSuccess
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Log in ']
+21:03:26 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Log in '] was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+21:03:26 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+21:03:26 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+21:03:27 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+21:03:27 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+21:03:27 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+21:03:28 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:28 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:28 INFO  application.MyListener - Start find element by -----> By.xpath: //a[@href='/let-car-work']
+21:03:28 INFO  application.MyListener - The element ---> By.xpath: //a[@href='/let-car-work'] was found
+21:03:28 INFO  application.MyListener - Start find element by -----> By.id: pickUpPlace
+21:03:28 INFO  application.MyListener - The element ---> By.id: pickUpPlace was found
+21:03:29 INFO  application.MyListener - Start find element by -----> By.cssSelector: div.pac-item
+21:03:29 INFO  application.MyListener - The element ---> By.cssSelector: div.pac-item was found
+21:03:29 INFO  application.MyListener - Start find element by -----> By.id: make
+21:03:29 INFO  application.MyListener - The element ---> By.id: make was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: model
+21:03:30 INFO  application.MyListener - The element ---> By.id: model was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: year
+21:03:30 INFO  application.MyListener - The element ---> By.id: year was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: engine
+21:03:30 INFO  application.MyListener - The element ---> By.id: engine was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: fuel
+21:03:30 INFO  application.MyListener - The element ---> By.id: fuel was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.xpath: .//option[normalize-space(.) = "Petrol"]
+21:03:30 INFO  application.MyListener - The element ---> By.xpath: .//option[normalize-space(.) = "Petrol"] was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: gear
+21:03:30 INFO  application.MyListener - The element ---> By.id: gear was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.xpath: .//option[normalize-space(.) = "MT"]
+21:03:30 INFO  application.MyListener - The element ---> By.xpath: .//option[normalize-space(.) = "MT"] was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: wheelsDrive
+21:03:30 INFO  application.MyListener - The element ---> By.id: wheelsDrive was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.xpath: .//option[normalize-space(.) = "AWD"]
+21:03:30 INFO  application.MyListener - The element ---> By.xpath: .//option[normalize-space(.) = "AWD"] was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: doors
+21:03:30 INFO  application.MyListener - The element ---> By.id: doors was found
+21:03:30 INFO  application.MyListener - Start find element by -----> By.id: seats
+21:03:30 INFO  application.MyListener - The element ---> By.id: seats was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: class
+21:03:31 INFO  application.MyListener - The element ---> By.id: class was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: fuelConsumption
+21:03:31 INFO  application.MyListener - The element ---> By.id: fuelConsumption was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: serialNumber
+21:03:31 INFO  application.MyListener - The element ---> By.id: serialNumber was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: price
+21:03:31 INFO  application.MyListener - The element ---> By.id: price was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: distance
+21:03:31 INFO  application.MyListener - The element ---> By.id: distance was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.className: feature-input
+21:03:31 INFO  application.MyListener - The element ---> By.className: feature-input was found
+21:03:31 INFO  application.MyListener - Start find element by -----> By.id: about
+21:03:31 INFO  application.MyListener - The element ---> By.id: about was found
+21:03:32 INFO  application.MyListener - Start find element by -----> By.id: photos
+21:03:32 INFO  application.MyListener - The element ---> By.id: photos was found
+21:03:32 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Submit']
+21:03:32 INFO  application.MyListener - The element ---> By.xpath: //button[.='Submit'] was found
+21:03:32 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Submit']
+21:03:32 INFO  application.MyListener - The element ---> By.xpath: //button[.='Submit'] was found
+21:03:33 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Submit']
+21:03:33 INFO  application.MyListener - The element ---> By.xpath: //button[.='Submit'] was found
+21:03:33 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Submit']
+21:03:33 INFO  application.MyListener - The element ---> By.xpath: //button[.='Submit'] was found
+21:03:33 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Car added']
+21:03:35 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Car added'] was found
+21:03:35 INFO  application.MyListener - Start find element by -----> By.xpath: //button[text()='Show car']
+21:03:35 INFO  application.MyListener - The element ---> By.xpath: //button[text()='Show car'] was found
+21:03:35 INFO  tests.TestBase - End of test --> addNewCarSuccess
+21:03:35 INFO  tests.TestBase - Start method: searchDateBySelectAnyMonth
+21:03:35 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:03:40 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:03:40 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Search '] 
+21:03:40 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Search ']  was found
+21:03:40 INFO  application.MyListener - Start find element by -----> By.id: city
+21:03:40 INFO  application.MyListener - The element ---> By.id: city was found
+21:03:40 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:03:41 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:03:41 INFO  application.MyListener - Start find element by -----> By.id: dates
+21:03:41 INFO  application.MyListener - The element ---> By.id: dates was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 22 ']
+21:03:42 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 22 '] was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@aria-label='Next month']
+21:03:42 INFO  application.MyListener - The element ---> By.xpath: //button[@aria-label='Next month'] was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@aria-label='Next month']
+21:03:42 INFO  application.MyListener - The element ---> By.xpath: //button[@aria-label='Next month'] was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 29 ']
+21:03:42 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 29 '] was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:42 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:42 INFO  application.MyListener - Start find element by -----> By.cssSelector: .search-results
+21:03:43 INFO  application.MyListener - The element ---> By.cssSelector: .search-results was found
+21:03:43 INFO  tests.TestBase - Chosen date in future: from current day and until one year forward only
+21:03:43 INFO  tests.TestBase - End of test --> searchDateBySelectAnyMonth
+21:03:43 INFO  tests.TestBase - Start method: searchDateBySelectCurrentMonth
+21:03:43 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:03:43 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:03:43 INFO  application.MyListener - Start find element by -----> By.id: city
+21:03:43 INFO  application.MyListener - The element ---> By.id: city was found
+21:03:43 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:03:43 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:03:44 INFO  application.MyListener - Start find element by -----> By.id: dates
+21:03:49 INFO  application.MyListener - The element ---> By.id: dates was found
+21:03:49 INFO  application.MyListener - Start find element by -----> By.cssSelector: [formcontrolname='dates']
+21:03:49 INFO  application.MyListener - The element ---> By.cssSelector: [formcontrolname='dates'] was found
+21:03:49 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 25 ']
+21:03:49 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 25 '] was found
+21:03:49 INFO  application.MyListener - Start find element by -----> By.xpath: //div[text()=' 30 ']
+21:03:49 INFO  application.MyListener - The element ---> By.xpath: //div[text()=' 30 '] was found
+21:03:49 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+21:03:49 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+21:03:49 INFO  application.MyListener - Start find element by -----> By.cssSelector: .search-results
+21:03:50 INFO  application.MyListener - The element ---> By.cssSelector: .search-results was found
+21:03:50 INFO  tests.TestBase - Chosen date in current month of the year
+21:03:50 INFO  tests.TestBase - End of test --> searchDateBySelectCurrentMonth
+21:03:50 INFO  tests.TestBase - Start method: searchTestByType
+21:03:50 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:03:50 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:03:50 INFO  application.MyListener - Start find element by -----> By.id: city
+21:03:50 INFO  application.MyListener - The element ---> By.id: city was found
+21:03:50 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:03:50 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:03:51 INFO  application.MyListener - We have a trouble ---> element click intercepted: Element <div class="pac-item">...</div> is not clickable at point (328, 293). Other element would receive the click: <div class="pac-item">...</div>
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f726d5c373a70c1e9f8f6eafb49eb763
+21:03:51 INFO  tests.TestBase - End of test --> searchTestByType
+21:03:51 INFO  tests.TestBase - Start method: searchTestByTypeNegative
+21:03:51 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+21:03:51 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+21:03:51 INFO  application.MyListener - Start find element by -----> By.id: city
+21:03:51 INFO  application.MyListener - The element ---> By.id: city was found
+21:03:51 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+21:03:51 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+21:03:51 INFO  application.MyListener - We have a trouble ---> stale element reference: element is not attached to the page document
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f726d5c373a70c1e9f8f6eafb49eb763
+21:03:51 INFO  tests.TestBase - End of test --> searchTestByTypeNegative

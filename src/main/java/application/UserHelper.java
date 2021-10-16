@@ -35,9 +35,8 @@ public class UserHelper extends HelperBase {
         click(By.xpath("//button[@type='submit']"));
     }
 
-    public boolean isLogged(String value) {
-        String text = wd.findElement(By.cssSelector(value)).getText();
-        click(By.xpath("//button[text()='Ok']"));
+    public boolean isLogged() {
+        String text = wd.findElement(By.cssSelector(".dialog-container h2")).getText();
         return text.equals("Logged in success");
     }
 
@@ -92,9 +91,9 @@ public class UserHelper extends HelperBase {
         return message.equals("You are logged in success");
     }
 
-    public boolean isErrorPasswordDisplayed() {
+    public boolean isEmailErrorDisplayed() {
         // click(By.id("email"));
-        return isElementPresent(By.xpath("//div[@class='error']"));
+        return isElementPresent(By.xpath("//div[text()='Wrong email format']"));
 
     }
 

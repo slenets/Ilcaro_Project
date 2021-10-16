@@ -1,0 +1,58 @@
+14:57:20 INFO  tests.TestBase - Start method: loginSuccess
+14:57:20 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:25 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:25 INFO  tests.TestBase - Login with email: slavka.lenetz@gmail.com &  password Ilcarro123
+14:57:25 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+14:57:25 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+14:57:25 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+14:57:25 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+14:57:25 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+14:57:25 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+14:57:25 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+14:57:25 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+14:57:25 INFO  application.MyListener - Start find element by -----> By.id: #mat-dialog-2
+14:57:30 INFO  application.MyListener - We have a trouble ---> no such element: Unable to locate element: {"method":"css selector","selector":"#\#mat\-dialog\-2"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19af0db4346084d18e0089a3c41340d0
+*** Element info: {Using=id, value=#mat-dialog-2}
+14:57:31 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:31 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:31 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:31 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:32 INFO  application.MyListener - We have a trouble ---> element click intercepted: Element <a _ngcontent-php-c25="" class="navigation-link ng-star-inserted" href="/logout?url=%2Fsearch">...</a> is not clickable at point (1471, 34). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19af0db4346084d18e0089a3c41340d0
+14:57:32 INFO  tests.TestBase - End of test --> loginSuccess
+14:57:32 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:32 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:32 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:32 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:33 INFO  application.MyListener - We have a trouble ---> element click intercepted: Element <a _ngcontent-php-c25="" class="navigation-link ng-star-inserted" href="/logout?url=%2Fsearch">...</a> is not clickable at point (1471, 34). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19af0db4346084d18e0089a3c41340d0
+14:57:33 INFO  tests.TestBase - End of test --> loginSuccessModel
+14:57:33 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:33 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:33 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:57:33 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:57:34 INFO  application.MyListener - We have a trouble ---> element click intercepted: Element <a _ngcontent-php-c25="" class="navigation-link ng-star-inserted" href="/logout?url=%2Fsearch">...</a> is not clickable at point (1471, 34). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LINCIVQ', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 93.0.4577.15 (660fc11082ba5..., userDataDir: C:\Users\Slava\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19af0db4346084d18e0089a3c41340d0
+14:57:34 INFO  tests.TestBase - End of test --> negativeLoginWrongPassword

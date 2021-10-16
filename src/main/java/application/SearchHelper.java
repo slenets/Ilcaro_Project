@@ -12,14 +12,10 @@ public class SearchHelper extends HelperBase {
         super(wd);
     }
 
-    public void findCarForm() {
-        typeTextBox(By.id("city"), "Tel Aviv Israel");
-    }
 
-    public void fillSearchForm(String city, String dateFrom, String dateTo) {
+    public void fillSearchFormCurrent(String city, String dateFrom, String dateTo) {
         fillInputCity(city);
-        selectDate(dateFrom, dateTo);
-        selectFutureDate(dateFrom, dateTo);
+        selectDateCurrentMonth(dateFrom, dateTo);
     }
 
     public void fillSearchFormFuture(String city, String dateFrom, String dateTo) {
@@ -27,10 +23,15 @@ public class SearchHelper extends HelperBase {
         selectFutureDate(dateFrom, dateTo);
     }
 
-    private void selectDate(String dateFrom, String dateTo) {
+    private void selectDateCurrentMonth(String dateFrom, String dateTo) {
         String[] dateF = dateFrom.split("/");
         String[] dateT = dateTo.split("/");
-        click(By.id("dates"));
+
+        if(isElementPresent(By.id("dates"))) {
+            click(By.id("dates"));
+        }else{
+            click(By.cssSelector("[formcontrolname='dates']"));
+        }
 
         String locatorFrom = String.format("//div[text()=' %s ']", dateF[1]);
         String locatorTo = String.format("//div[text()=' %s ']", dateT[1]);
@@ -91,10 +92,32 @@ public class SearchHelper extends HelperBase {
         pause(500);
     }
 
-    public void clickYallaButton() {
-    }
-
     public boolean islistOfCarsAppeared() {
         return isElementPresent(By.cssSelector(".search-results"));
+    }
+
+    public boolean isSearchFormPresent() {
+        return wd.findElements(By.xpath("//h1[text()='Find your car now!']")).size() > 0;
+    }
+
+    public void clickSearchHeader() {
+        click(By.xpath("//a[text()=' Search '] "));
+    }
+
+    public void typeDate(String city, String dateFrom, String dateTo) {
+        fillInputCity(city);
+        if(isElementPresent(By.id("dates"))) {
+            click(By.cssSelector("[formcontrolname='dates']"));
+            typeTextBox(By.id("dates"), dateFrom +" - "+ dateTo);
+        }else{
+            click(By.cssSelector("[formcontrolname='dates']"));
+            typeTextBox(By.cssSelector("[formcontrolname='dates']"), dateFrom +" - "+ dateTo);
+        }
+       click(By.cssSelector(".cdk-overlay-container"));
+
+    }
+
+    public boolean isErrorPresent() {
+        return isElementPresent(By.className("ng-star-inserted"));
     }
 }

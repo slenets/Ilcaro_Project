@@ -1,0 +1,20 @@
+14:19:16 INFO  tests.TestBase - Start method: registrationNegativeTest
+14:19:16 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+14:19:21 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+14:19:21 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Sign up ']
+14:19:21 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Sign up '] was found
+14:19:21 INFO  application.MyListener - Start find element by -----> By.id: name
+14:19:21 INFO  application.MyListener - The element ---> By.id: name was found
+14:19:21 INFO  application.MyListener - Start find element by -----> By.id: lastName
+14:19:21 INFO  application.MyListener - The element ---> By.id: lastName was found
+14:19:21 INFO  application.MyListener - Start find element by -----> By.id: email
+14:19:21 INFO  application.MyListener - The element ---> By.id: email was found
+14:19:21 INFO  application.MyListener - Start find element by -----> By.id: password
+14:19:21 INFO  application.MyListener - The element ---> By.id: password was found
+14:19:22 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='error']
+14:19:22 INFO  application.MyListener - The element ---> By.xpath: //div[@class='error'] was found
+14:19:22 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+14:19:22 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+14:19:22 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+14:19:27 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+14:19:27 INFO  tests.TestBase - End of test --> registrationNegativeTest

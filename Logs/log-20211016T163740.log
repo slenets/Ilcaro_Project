@@ -1,0 +1,12 @@
+16:37:45 INFO  tests.TestBase - Start method: searchTestByTypeNegative
+16:37:45 INFO  application.MyListener - Start find element by -----> By.xpath: //h1[text()='Find your car now!']
+16:37:45 INFO  application.MyListener - The element ---> By.xpath: //h1[text()='Find your car now!'] was found
+16:37:45 INFO  application.MyListener - Start find element by -----> By.id: city
+16:37:45 INFO  application.MyListener - The element ---> By.id: city was found
+16:37:45 INFO  application.MyListener - Start find element by -----> By.cssSelector: .pac-item
+16:37:46 INFO  application.MyListener - The element ---> By.cssSelector: .pac-item was found
+16:37:46 INFO  application.MyListener - Start find element by -----> By.id: dates
+16:37:46 INFO  application.MyListener - The element ---> By.id: dates was found
+16:37:47 INFO  application.MyListener - Start find element by -----> By.className: ng-star-inserted
+16:37:47 INFO  application.MyListener - The element ---> By.className: ng-star-inserted was found
+16:37:47 INFO  tests.TestBase - End of test --> searchTestByTypeNegative

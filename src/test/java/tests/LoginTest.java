@@ -12,21 +12,22 @@ import org.testng.xml.dom.ParentSetter;
 
 public class LoginTest extends TestBase{
 
-    @BeforeMethod
-    public void logOut(){
+    @BeforeMethod(alwaysRun = true)
+    public void precondition(){
         if(app.userHelper().isElementPresent(By.xpath("//a[text()=' Logout ']"))){
             app.userHelper().logout();
         }
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccess(){
         logger.info("Login with email: slavka.lenetz@gmail.com &  password Ilcarro123");
 
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm("slavka.lenetz@gmail.com", "Ilcarro123");
         app.userHelper().submitLoginForm();
-        Assert.assertTrue(app.userHelper().isLogged(".dialog-container h2"));
+        Assert.assertTrue(app.userHelper().isLogged());
+
     }
 
     @Test
@@ -37,7 +38,7 @@ public class LoginTest extends TestBase{
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm(user);
         app.userHelper().submitLoginForm();
-        Assert.assertTrue(app.userHelper().isLogged(".dialog-container h2"));
+        Assert.assertTrue(app.userHelper().isLogged());
     }
 
     @Test
@@ -47,14 +48,12 @@ public class LoginTest extends TestBase{
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm(user);
         app.userHelper().submitLoginForm();
-        Assert.assertFalse(app.userHelper().isLogged(".dialog-container h2"));
+        Assert.assertFalse(app.userHelper().isLogged());
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition(){
-        if(app.userHelper().isLogOutPresent()) {
-            app.userHelper().logout();
-        }
+        app.userHelper().clickOkButton();
     }
 }

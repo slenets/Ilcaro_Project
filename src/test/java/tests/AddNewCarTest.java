@@ -25,7 +25,7 @@ public class AddNewCarTest extends TestBase{
 public void addNewCarSuccess(){
     //add car
 
-    int i = (int) ((System.currentTimeMillis() / 1000) / 1000000000);
+    int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
 
     Car car = new Car()
             .withAddress("Tel Aviv, Israel")
@@ -51,6 +51,7 @@ public void addNewCarSuccess(){
     app.carHelper().attachPhoto();
     app.carHelper().submitForm();
     Assert.assertTrue(app.carHelper().isCarAdded());
+    app.carHelper().showAddedCar();
 
 }
 

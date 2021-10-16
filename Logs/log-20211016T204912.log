@@ -1,0 +1,41 @@
+20:49:20 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+20:49:25 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+20:49:25 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Sign up ']
+20:49:25 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Sign up '] was found
+20:49:25 INFO  application.MyListener - Start find element by -----> By.id: name
+20:49:25 INFO  application.MyListener - The element ---> By.id: name was found
+20:49:25 INFO  application.MyListener - Start find element by -----> By.id: lastName
+20:49:25 INFO  application.MyListener - The element ---> By.id: lastName was found
+20:49:25 INFO  application.MyListener - Start find element by -----> By.id: email
+20:49:25 INFO  application.MyListener - The element ---> By.id: email was found
+20:49:25 INFO  application.MyListener - Start find element by -----> By.id: password
+20:49:25 INFO  application.MyListener - The element ---> By.id: password was found
+20:49:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+20:49:26 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+20:49:26 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+20:49:26 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+20:49:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+20:49:26 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+20:49:26 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+20:49:26 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+20:49:26 INFO  tests.TestBase - End of test --> registrationPositiveTest
+20:49:26 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+20:49:26 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+20:49:26 INFO  application.MyListener - Start find element by -----> By.xpath: //a[text()=' Logout ']
+20:49:26 INFO  application.MyListener - The element ---> By.xpath: //a[text()=' Logout '] was found
+20:49:27 INFO  tests.TestBase - Login with email: slavka.lenetz@gmail.com &  password Ilcarro123
+20:49:27 INFO  application.MyListener - Start find element by -----> By.xpath: //div[@class='header']/a[6]
+20:49:27 INFO  application.MyListener - The element ---> By.xpath: //div[@class='header']/a[6] was found
+20:49:27 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='email']
+20:49:27 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='email'] was found
+20:49:27 INFO  application.MyListener - Start find element by -----> By.xpath: //input[@formcontrolname='password']
+20:49:27 INFO  application.MyListener - The element ---> By.xpath: //input[@formcontrolname='password'] was found
+20:49:27 INFO  application.MyListener - Start find element by -----> By.xpath: //button[@type='submit']
+20:49:27 INFO  application.MyListener - The element ---> By.xpath: //button[@type='submit'] was found
+20:49:27 INFO  application.MyListener - Start find element by -----> By.cssSelector: .dialog-container h2
+20:49:28 INFO  application.MyListener - The element ---> By.cssSelector: .dialog-container h2 was found
+20:49:28 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+20:49:28 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+20:49:28 INFO  application.MyListener - Start find element by -----> By.xpath: //button[.='Ok']
+20:49:28 INFO  application.MyListener - The element ---> By.xpath: //button[.='Ok'] was found
+20:49:28 INFO  tests.TestBase - End of test --> loginSuccess

@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 public class RegistrationTest extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.userHelper().isLogOutPresent()) {
             app.userHelper().logout();
         }
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void registrationPositiveTest() {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
@@ -28,11 +28,10 @@ public class RegistrationTest extends TestBase {
 
     }
 
+
     //Model- With fluence style
     @Test
     public void registrationPositiveTestModel() {
-
-
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
         User user = new User()
@@ -52,18 +51,7 @@ public class RegistrationTest extends TestBase {
 
     }
 
-    @Test
-    public void registrationPositiveTest2() {
 
-        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
-
-        app.userHelper().openRegistrationForm();
-        app.userHelper().fillRegistrationForm("Andy", "Candy", "andycandy" + i + "@gmail.com", "Andy"+i+"Candy123");
-        app.userHelper().fillCheckBox();
-        app.userHelper().submitRegistrationForm();
-        Assert.assertTrue(app.userHelper().isRegistrationSuccess());
-
-    }
 
     @Test
     public void registrationNegativeTest() {
@@ -72,11 +60,11 @@ public class RegistrationTest extends TestBase {
 
         app.userHelper().openRegistrationForm();
         app.userHelper().fillRegistrationForm("Andy", "Candy", "andycandy" + i + "gmail.com", "AndyCa"+i+"ndy123");
-//        app.userHelper().fillCheckBox();
-//        app.userHelper().fillCheckBox();
-        //app.userHelper().submitRegistrationForm();
+        app.userHelper().fillCheckBox();
+        app.userHelper().fillCheckBox();
+        app.userHelper().submitRegistrationForm();
 
-        Assert.assertTrue(app.userHelper().isErrorPasswordDisplayed());
+        Assert.assertTrue(app.userHelper().isEmailErrorDisplayed());
         Assert.assertFalse(app.userHelper().isYallaButtonActive());
 
     }
@@ -87,7 +75,7 @@ public class RegistrationTest extends TestBase {
 //    }
 
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition() {
         app.userHelper().clickOkButton();
 

@@ -36,6 +36,14 @@ public class HelperBase {
         }
     }
 
+    public void submitYalla() {
+        click(By.xpath("//button[@type='submit']"));
+    }
+
+    public boolean isYallaButtonActive() {
+        return wd.findElement(By.xpath("//button[@type='submit']")).isSelected();
+        //return isElementPresent(By.xpath("//button[@disabled]"));
+    }
 
 
 
