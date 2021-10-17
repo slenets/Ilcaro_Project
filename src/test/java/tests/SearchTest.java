@@ -21,13 +21,13 @@ public class SearchTest extends TestBase{
         app.getSearchHelper().submitYalla();
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
     }
-//
-//    @Test
-//    public void searchTestByTypeNegative(){
-//        app.getSearchHelper().typeDate("Haifa", "2/2/2022", "5/2/2021");
-//        Assert.assertTrue(app.getSearchHelper().isErrorPresent());
-//        Assert.assertFalse(app.getSearchHelper().isYallaButtonActive());
-//    }
+
+    @Test
+    public void searchTestByTypeNegative(){
+        app.getSearchHelper().typeDate("Haifa", "2/2/2022", "5/2/2021");
+        Assert.assertTrue(app.getSearchHelper().isErrorPresent());
+        Assert.assertFalse(app.getSearchHelper().isYallaButtonActive());
+    }
 
     @Test
     public void searchDateBySelectCurrentMonth(){
