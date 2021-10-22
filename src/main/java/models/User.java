@@ -5,6 +5,16 @@ public class User {
     String password;
     String name;
     String lastName;
+    String phoneNumber;
+
+    public User withPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+        return this;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
     public User withEmail(String email) {
         this.email = email;

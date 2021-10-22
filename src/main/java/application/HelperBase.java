@@ -1,8 +1,10 @@
 package application;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
+
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase {
     WebDriver wd;
@@ -45,6 +47,16 @@ public class HelperBase {
         //return isElementPresent(By.xpath("//button[@disabled]"));
     }
 
+    public void takeScreenShot(String pathToFile){
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+
+        File screenShot = new File(pathToFile);
+        try{
+            Files.copy(tmp, screenShot);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 
 
 

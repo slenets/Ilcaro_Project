@@ -2,7 +2,12 @@ package application;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.time.LocalDate;
 
 public class SearchHelper extends HelperBase {
@@ -88,11 +93,16 @@ public class SearchHelper extends HelperBase {
 
     private void fillInputCity(String city) {
         typeTextBox(By.id("city"), city);
-        click(By.cssSelector(".pac-item"));
+        //click(By.cssSelector(".pac-item"));
         pause(500);
+
+        Actions actions = new Actions(wd);
+        actions.moveToElement(wd.findElement(By.cssSelector(".pac-item"))).click().perform();
     }
 
     public boolean islistOfCarsAppeared() {
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".search-results")));
         return isElementPresent(By.cssSelector(".search-results"));
     }
 
@@ -106,15 +116,8 @@ public class SearchHelper extends HelperBase {
 
     public void typeDate(String city, String dateFrom, String dateTo) {
         fillInputCity(city);
-        if(isElementPresent(By.id("dates"))) {
-            click(By.cssSelector("[formcontrolname='dates']"));
-            typeTextBox(By.id("dates"), dateFrom +" - "+ dateTo);
-        }else{
-            click(By.cssSelector("[formcontrolname='dates']"));
-            typeTextBox(By.cssSelector("[formcontrolname='dates']"), dateFrom +" - "+ dateTo);
-        }
-       click(By.cssSelector(".cdk-overlay-container"));
-
+        typeTextBox(By.cssSelector("[formcontrolname='dates']"), dateFrom +" - "+ dateTo);
+        click(By.cssSelector(".cdk-overlay-container"));
     }
 
     public boolean isErrorPresent() {

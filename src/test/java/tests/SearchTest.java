@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -15,7 +16,7 @@ public class SearchTest extends TestBase{
         }
     }
 
-    @Test
+    @Test()
     public void searchTestByType(){
         app.getSearchHelper().typeDate("Haifa", "2/2/2022", "5/2/2022");
         app.getSearchHelper().submitYalla();
@@ -50,4 +51,9 @@ public class SearchTest extends TestBase{
 
         logger.info("Chosen date in future: from current day and until one year forward only");
     }
+
+//    @AfterMethod
+//    public void postCondition(){
+//        app.getSearchHelper().clickSearchHeader();
+//    }
 }
