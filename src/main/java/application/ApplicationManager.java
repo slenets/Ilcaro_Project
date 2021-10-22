@@ -6,6 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -17,16 +22,22 @@ public class ApplicationManager {
     SearchHelper searchHelper;
     RentHelper rent;
     String browser;
+    Properties properties;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
+        this.properties = new Properties();
     }
 
     public SearchHelper getSearchHelper() {
         return searchHelper;
     }
 
-    public void init(){
+    public void init() throws IOException {
+        String target = System.getProperty("target", "data");
+        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+
+
         if(browser.equals(BrowserType.CHROME)){
             wd = new EventFiringWebDriver(new ChromeDriver());
         }else if(browser.equals(BrowserType.FIREFOX)){
