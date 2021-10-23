@@ -1,13 +1,16 @@
 package application;
 
-import org.openqa.selenium.WebDriver;
+import application.helpers.HelperCar;
+import application.helpers.RentHelper;
+import application.helpers.SearchHelper;
+import application.helpers.UserHelper;
+import application.listeners.MyListener;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -45,7 +48,8 @@ public class ApplicationManager {
         }
         wd.register(new MyListener());
 
-        wd.navigate().to("https://ilcarro.xyz/search");
+        //wd.navigate().to("https://ilcarro.xyz/search");
+        wd.navigate().to(properties.getProperty("web.Base"));
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         userHelper = new UserHelper(wd);
@@ -53,6 +57,8 @@ public class ApplicationManager {
         searchHelper = new SearchHelper(wd);
         rent = new RentHelper(wd);
     }
+
+
 
     public void stop(){
         //wd.quit();
@@ -68,5 +74,13 @@ public class ApplicationManager {
 
     public RentHelper rentHelper() {
         return rent;
+    }
+
+    public String emailProps(){
+        return properties.getProperty("web.email");
+    }
+
+    public String passwordProps(){
+        return properties.getProperty("web.password");
     }
 }

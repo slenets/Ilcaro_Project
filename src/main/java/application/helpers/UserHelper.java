@@ -1,12 +1,11 @@
-package application;
+package application.helpers;
 
+import application.helpers.HelperBase;
 import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UserHelper extends HelperBase {
     public UserHelper(WebDriver wd) {
@@ -16,11 +15,6 @@ public class UserHelper extends HelperBase {
     public void openLoginForm() {
         click(By.xpath("//div[@class='header']/a[6]"));
         //              //a[text()=' Log in ']
-    }
-
-    public void fillLoginForm(String email, String password) {
-        typeTextBox(By.xpath("//input[@formcontrolname='email']"), email);
-        typeTextBox(By.xpath("//input[@formcontrolname='password']"), password);
     }
 
     public void fillLoginForm(User user) {

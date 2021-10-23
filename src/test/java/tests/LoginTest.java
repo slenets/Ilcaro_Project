@@ -1,16 +1,13 @@
 package tests;
 
-import application.ApplicationManager;
-import application.MyDataProvider;
+import application.dataprovider.MyDataProvider;
 import models.User;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.xml.dom.ParentSetter;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -44,6 +41,7 @@ public class LoginTest extends TestBase{
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm(email, password);
         app.userHelper().submitLoginForm();
+        app.userHelper().pause(1000);
         Assert.assertTrue(app.userHelper().isLogged());
 
     }
@@ -64,6 +62,11 @@ public class LoginTest extends TestBase{
 
     }
 
+    @Test
+    public void test1(){
+
+    }
+
     @Test(dataProvider = "dataLoginCSV")
     public void loginSuccessModel(User user){
 //        User user = new User().withPassword("Ilcarro123") //Ilcarro123
@@ -73,6 +76,7 @@ public class LoginTest extends TestBase{
         app.userHelper().fillLoginForm(user);
         app.userHelper().submitLoginForm();
         //app.userHelper().takeScreenShot("C:\\Qa29\\Ilcaro_Project\\src\\test\\screenshots");
+        app.userHelper().pause(500);
         Assert.assertTrue(app.userHelper().isLogged());
     }
 

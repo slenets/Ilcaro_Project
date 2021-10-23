@@ -35,7 +35,7 @@ public class SearchTest extends TestBase{
         //date-picker
         app.getSearchHelper().fillSearchFormCurrent("Haifa", "10/25/2021", "10/30/2021");
         app.userHelper().submitYalla();
-        app.userHelper().pause(500);
+        app.userHelper().pause(1000);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
 
         logger.info("Chosen date in current month of the year");
@@ -44,7 +44,7 @@ public class SearchTest extends TestBase{
     @Test
     public void searchDateBySelectAnyMonth(){
         //date-picker
-        app.getSearchHelper().fillSearchFormFuture("Haifa", "10/22/2021", "12/29/2021");
+        app.getSearchHelper().fillSearchFormFuture("Haifa", "10/30/2021", "12/20/2021");
         app.userHelper().submitYalla();
         app.userHelper().pause(500);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());

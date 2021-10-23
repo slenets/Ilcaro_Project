@@ -1,13 +1,12 @@
-package application;
+package application.helpers;
 
+import application.helpers.HelperBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
 import java.time.LocalDate;
 
 public class SearchHelper extends HelperBase {
@@ -19,6 +18,7 @@ public class SearchHelper extends HelperBase {
 
 
     public void fillSearchFormCurrent(String city, String dateFrom, String dateTo) {
+        pause(1000);
         fillInputCity(city);
         selectDateCurrentMonth(dateFrom, dateTo);
     }
@@ -93,8 +93,7 @@ public class SearchHelper extends HelperBase {
 
     private void fillInputCity(String city) {
         typeTextBox(By.id("city"), city);
-        //click(By.cssSelector(".pac-item"));
-        pause(500);
+        //click(By.cssSelector("div.pac-item"));
 
         Actions actions = new Actions(wd);
         actions.moveToElement(wd.findElement(By.cssSelector(".pac-item"))).click().perform();

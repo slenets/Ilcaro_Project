@@ -14,7 +14,7 @@ public class AddNewCarTest extends TestBase{
     public void precondition(){
     //login
     if(app.userHelper().isElementPresent(By.xpath("//a[text()=' Log in ']"))) {
-        User user = new User().withEmail("slavka.lenetz@gmail.com").withPassword("Ilcarro123");
+        User user = new User().withEmail(app.emailProps()).withPassword(app.passwordProps());
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm(user);
         app.userHelper().submitRegistrationForm();
@@ -50,6 +50,7 @@ public void addNewCarSuccess(){
     app.carHelper().fillAddCarForm(car);
     app.carHelper().attachPhoto();
     app.carHelper().submitForm();
+    app.carHelper().pause(1000);
     Assert.assertTrue(app.carHelper().isCarAdded());
     app.carHelper().showAddedCar();
 

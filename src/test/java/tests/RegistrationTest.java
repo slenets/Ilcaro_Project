@@ -2,6 +2,7 @@ package tests;
 
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,6 +25,7 @@ public class RegistrationTest extends TestBase {
         app.userHelper().fillRegistrationForm("Andy", "Candy", "andycandy" + i + "@gmail.com", "AndyCandy"+i+"123");
         app.userHelper().fillCheckBox();
         app.userHelper().submitRegistrationForm();
+        app.userHelper().pause(1000);
         Assert.assertTrue(app.userHelper().isRegistrationSuccess());
 
     }
@@ -47,6 +49,7 @@ public class RegistrationTest extends TestBase {
         app.userHelper().fillRegistrationForm(user);
         app.userHelper().fillCheckBox();
         app.userHelper().submitRegistrationForm();
+        app.userHelper().pause(500);
         Assert.assertTrue(app.userHelper().isRegistrationSuccess());
 
     }
@@ -78,7 +81,12 @@ public class RegistrationTest extends TestBase {
     @AfterMethod(alwaysRun = true)
     public void postCondition() {
         app.userHelper().clickOkButton();
+        app.getSearchHelper().clickSearchHeader();
+    }
 
+    @AfterClass
+    public void logOut(){
+        app.userHelper().logout();
     }
 
 

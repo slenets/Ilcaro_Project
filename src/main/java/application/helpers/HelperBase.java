@@ -1,4 +1,4 @@
-package application;
+package application.helpers;
 
 import com.google.common.io.Files;
 import org.openqa.selenium.*;
@@ -56,6 +56,11 @@ public class HelperBase {
         }catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    public void fillLoginForm(String email, String password) {
+        typeTextBox(By.xpath("//input[@formcontrolname='email']"), email);
+        typeTextBox(By.xpath("//input[@formcontrolname='password']"), password);
     }
 
 

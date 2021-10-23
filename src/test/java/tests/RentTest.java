@@ -15,7 +15,7 @@ public class RentTest extends TestBase {
                 .withLastName("Snow")
                 .withEmail("snow" + i + "@gmail.com")
                 .withPassword("Lis" + i + "ndy123")
-                .withPhoneNumber("+7888" + i + "45");
+                .withPhoneNumber("+788822" + i + "45");
 
         if (!app.userHelper().isLogOutPresent()) {
             app.userHelper().openLoginForm();
@@ -23,11 +23,12 @@ public class RentTest extends TestBase {
         app.userHelper().fillLoginForm("slavka.lenetz@gmail.com", "Ilcarro123");
         app.userHelper().submitYalla();
         app.userHelper().clickOkButton();
+        app.rentHelper().pause(1000);
 
-        app.getSearchHelper().fillSearchFormFuture("Rehovot", "11/1/2021", "11/12/2021");
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/1/2021", "11/12/2021");
         app.getSearchHelper().submitYalla();
-        app.rentHelper().selectCar();
-        app.rentHelper().clickRentNow();
+        app.rentHelper().open50items();
+        app.rentHelper().selectCarAndRent();
         app.rentHelper().fillOrderForm(user);
         app.rentHelper().submitOrderForm();
 
@@ -35,8 +36,32 @@ public class RentTest extends TestBase {
 
     }
 
+    @Test
+    public void rentCarBeforeLogin(){
+        int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
+        User user = new User()
+                .withName("Lis")
+                .withLastName("Snow")
+                .withEmail("snow" + i + "@gmail.com")
+                .withPassword("Lis" + i + "ndy123")
+                .withPhoneNumber("+788899" + i + "45");
+
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/1/2021", "11/12/2021");
+        app.getSearchHelper().submitYalla();
+        app.rentHelper().open50items();
+        app.rentHelper().selectCarAndRent("slavka.lenetz@gmail.com", "Ilcarro123");
+        app.getSearchHelper().pause(1000);
+        app.rentHelper().fillOrderForm(user);
+        app.rentHelper().submitOrderForm();
+        app.rentHelper().pause(1000);
+        Assert.assertTrue(app.rentHelper().isOrderSuccess());
+    }
+
     @AfterMethod
     public void postCondition(){
         app.rentHelper().closeOrderSuccess();
+        app.rentHelper().pause(1000);
+        app.userHelper().logout();
+        app.getSearchHelper().clickSearchHeader();
     }
 }
