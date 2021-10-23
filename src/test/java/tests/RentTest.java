@@ -25,12 +25,13 @@ public class RentTest extends TestBase {
         app.userHelper().clickOkButton();
         app.rentHelper().pause(1000);
 
-        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/1/2021", "11/12/2021");
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/15/2021", "11/16/2021");
         app.getSearchHelper().submitYalla();
         app.rentHelper().open50items();
         app.rentHelper().selectCarAndRent();
         app.rentHelper().fillOrderForm(user);
         app.rentHelper().submitOrderForm();
+        app.rentHelper().pause(1000);
 
         Assert.assertTrue(app.rentHelper().isOrderSuccess());
 
@@ -46,7 +47,7 @@ public class RentTest extends TestBase {
                 .withPassword("Lis" + i + "ndy123")
                 .withPhoneNumber("+788899" + i + "45");
 
-        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/1/2021", "11/12/2021");
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/13/2021", "11/14/2021");
         app.getSearchHelper().submitYalla();
         app.rentHelper().open50items();
         app.rentHelper().selectCarAndRent("slavka.lenetz@gmail.com", "Ilcarro123");

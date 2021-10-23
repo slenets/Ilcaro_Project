@@ -23,7 +23,7 @@ public class RentHelper extends HelperBase {
     public void selectCarAndRent() {
         List<WebElement> elementList = wd.findElements(By.className("car-container"));
         int size = elementList.size();
-        int i = 10;
+        int i = 1;
 
         while (size > 0) {
             click(By.cssSelector(String.format(".car-container:nth-child(%s)", i++)));
@@ -42,7 +42,7 @@ public class RentHelper extends HelperBase {
     public void selectCarAndRent(String email, String password) {
         List<WebElement> elementList = wd.findElements(By.className("car-container"));
         int size = elementList.size();
-        int i = 10;
+        int i = 1;
 
         while (size > 0) {
             click(By.cssSelector(String.format(".car-container:nth-child(%s)", i++)));
@@ -52,6 +52,7 @@ public class RentHelper extends HelperBase {
                     pause(1000);
                     fillLoginForm(email, password);
                     submitYalla();
+                    pause(1000);
                     clickRentNow();
                 }
                     break;
