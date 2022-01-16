@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class HelperBase {
     WebDriver wd;
@@ -22,7 +23,11 @@ public class HelperBase {
     }
 
     public void click(By locator) {
-        wd.findElement(locator).click();
+       // wd.findElement(locator).click();
+        WebElement element = wd.findElement(locator);
+
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        element.click();
     }
 
     public void typeTextBox(By locator, String text) {
@@ -35,7 +40,14 @@ public class HelperBase {
     }
 
     public boolean isElementPresent(By locator){
-        return wd.findElements(locator).size()>0;
+        try{
+            wd.findElement(locator);
+            return wd.findElement(locator).isDisplayed();
+        }catch (NoSuchElementException e){
+            e.getMessage();
+        }
+        return false;
+        //return wd.findElements(locator).size()>0;
     }
 
     public void pause(int millis){

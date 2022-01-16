@@ -21,7 +21,7 @@ public class AddNewCarTest extends TestBase{
     }
 }
 
-@Test
+@Test(groups = {"smoke"})
 public void addNewCarSuccess(){
     //add car
 

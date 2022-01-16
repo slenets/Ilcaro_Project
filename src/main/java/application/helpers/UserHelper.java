@@ -23,6 +23,14 @@ public class UserHelper extends HelperBase {
         pause(1000);
     }
 
+    public void clickEmailField(){
+        click(By.xpath("//input[@formcontrolname='email']"));
+    }
+
+    public void clickPasswordField(){
+        click(By.xpath("//input[@formcontrolname='password']"));
+    }
+
 
 
     public void submitLoginForm() {
@@ -94,6 +102,14 @@ public class UserHelper extends HelperBase {
     public boolean isYallaButtonActive() {
         return wd.findElement(By.xpath("//button[@type='submit']")).isSelected();
         //return isElementPresent(By.xpath("//button[@disabled]"));
+    }
+
+    public boolean isEmptyEmailWarning(){
+        return isElementPresent(By.xpath("//div[text()=' Email is required ']"));
+    }
+
+    public boolean isEmptyPasswordWarning(){
+        return isElementPresent(By.xpath("//div[text()=' Password is required ']"));
     }
 
 }

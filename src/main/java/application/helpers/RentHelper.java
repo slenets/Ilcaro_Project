@@ -62,7 +62,6 @@ public class RentHelper extends HelperBase {
                 size--;
             }
         }
-
     }
 
     private boolean loginIsPresent() {
@@ -74,7 +73,6 @@ public class RentHelper extends HelperBase {
     }
 
     public void fillOrderForm(User user) {
-        pause(1000);
         typeTextBox(By.id("firstName"), user.getName());
         typeTextBox(By.id("secondName"), user.getLastName());
         typeTextBox(By.id("email"), user.getEmail());

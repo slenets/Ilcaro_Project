@@ -48,6 +48,7 @@ public class HelperCar extends HelperBase {
     }
 
     private void typeLocation(String address) {
+        Math.random();
         typeTextBox(By.id("pickUpPlace"), address);
         pause(500);
         click(By.cssSelector("div.pac-item"));

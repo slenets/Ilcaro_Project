@@ -48,7 +48,7 @@ public class ApplicationManager {
         }
         wd.register(new MyListener());
 
-        //wd.navigate().to("https://ilcarro.xyz/search");
+        wd.navigate().to("https://ilcarro.xyz/search");
         wd.navigate().to(properties.getProperty("web.Base"));
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

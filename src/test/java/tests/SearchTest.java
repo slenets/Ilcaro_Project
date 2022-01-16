@@ -33,7 +33,7 @@ public class SearchTest extends TestBase{
     @Test
     public void searchDateBySelectCurrentMonth(){
         //date-picker
-        app.getSearchHelper().fillSearchFormCurrent("Haifa", "10/25/2021", "10/30/2021");
+        app.getSearchHelper().fillSearchFormCurrent("Haifa", "11/15/2021", "11/17/2021");
         app.userHelper().submitYalla();
         app.userHelper().pause(1000);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
@@ -44,7 +44,7 @@ public class SearchTest extends TestBase{
     @Test
     public void searchDateBySelectAnyMonth(){
         //date-picker
-        app.getSearchHelper().fillSearchFormFuture("Haifa", "10/30/2021", "12/20/2021");
+        app.getSearchHelper().fillSearchFormFuture("Haifa", "11/18/2021", "12/1/2021");
         app.userHelper().submitYalla();
         app.userHelper().pause(500);
         Assert.assertTrue(app.getSearchHelper().islistOfCarsAppeared());
