@@ -4,7 +4,7 @@
 
     <groups>
         <run>
-
+            <include name="smoke"/>
         </run>
     </groups>
 
@@ -14,7 +14,7 @@
             <class name="tests.LoginTest"/>
             <class name="tests.AddNewCarTest"/>
             <class name="tests.SearchTest"/>
-
+            <class name="tests.RentTest"/>
         </classes>
     </test>
 </suite>

@@ -19,12 +19,12 @@ public class TestGoogle {
 
     @Test
     public void openGoogle(){
-        wd.navigate().to("https://www.google.com");
+       // wd.navigate().to("https://www.google.com");
     }
 
     @AfterMethod
     public void stop(){
-        wd.quit();
+        //wd.quit();
     }
 
 }

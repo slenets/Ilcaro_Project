@@ -11,6 +11,10 @@ import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 
 public class MyListener extends AbstractWebDriverEventListener {
+    @Override
+    public void beforeNavigateTo(String url, WebDriver driver) {
+        super.beforeNavigateTo(url, driver);
+    }
 
     Logger logger = LoggerFactory.getLogger(MyListener.class);
 
@@ -44,8 +48,8 @@ public class MyListener extends AbstractWebDriverEventListener {
         String screenshot = "src/test/screenshots/screen-" + i + ".png";
         HelperBase helperBase = new HelperBase(wd);
         helperBase.takeScreenShot(screenshot);
-        logger.info("Screen with throwable in screnshots --->" + screenshot);
-
-
+        logger.info("Screen with throwable in screenshots --->" + screenshot);
     }
+
+
 }

@@ -16,7 +16,7 @@ public class RegistrationTest extends TestBase {
         }
     }
 
-    @Test(groups = {"web"})
+    @Test(groups = {"smoke"})
     public void registrationPositiveTest() {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);
@@ -56,7 +56,7 @@ public class RegistrationTest extends TestBase {
 
 
 
-    @Test
+    @Test(groups = {"smoke"})
     public void registrationNegativeTest() {
 
         int i = (int) ((System.currentTimeMillis() / 1000) % 3600);

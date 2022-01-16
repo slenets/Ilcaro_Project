@@ -1,6 +1,7 @@
 package tests;
 
 import models.User;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -25,7 +26,7 @@ public class RentTest extends TestBase {
         app.userHelper().clickOkButton();
         app.rentHelper().pause(1000);
 
-        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/15/2021", "11/16/2021");
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/12/2021", "11/14/2021");
         app.getSearchHelper().submitYalla();
         app.rentHelper().open50items();
         app.rentHelper().selectCarAndRent();
@@ -47,11 +48,11 @@ public class RentTest extends TestBase {
                 .withPassword("Lis" + i + "ndy123")
                 .withPhoneNumber("+788899" + i + "45");
 
-        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/13/2021", "11/14/2021");
+        app.getSearchHelper().fillSearchFormFuture("Tel Aviv", "11/30/2021", "12/2/2021");
         app.getSearchHelper().submitYalla();
         app.rentHelper().open50items();
         app.rentHelper().selectCarAndRent("slavka.lenetz@gmail.com", "Ilcarro123");
-        app.getSearchHelper().pause(1000);
+        app.getSearchHelper().pause(5000);
         app.rentHelper().fillOrderForm(user);
         app.rentHelper().submitOrderForm();
         app.rentHelper().pause(1000);
